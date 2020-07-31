@@ -14,6 +14,8 @@
 		4820D08A24D4256200DA45D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4820D08924D4256200DA45D6 /* Assets.xcassets */; };
 		4820D08D24D4256200DA45D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4820D08B24D4256200DA45D6 /* LaunchScreen.storyboard */; };
 		4820D09624D425C300DA45D6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820D09524D425C300DA45D6 /* APIManager.swift */; };
+		4820D09924D42C4D00DA45D6 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820D09824D42C4D00DA45D6 /* Parser.swift */; };
+		4820D09C24D42D6D00DA45D6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820D09B24D42D6D00DA45D6 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4820D08C24D4256200DA45D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4820D08E24D4256200DA45D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4820D09524D425C300DA45D6 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4820D09824D42C4D00DA45D6 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		4820D09B24D42D6D00DA45D6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		4820D07F24D4255D00DA45D6 /* Breaking Bad character explorer app */ = {
 			isa = PBXGroup;
 			children = (
+				4820D09A24D42D2500DA45D6 /* Model */,
+				4820D09724D42C2F00DA45D6 /* Parser */,
 				4820D09424D4259100DA45D6 /* ApiManager */,
 				4820D08024D4255E00DA45D6 /* AppDelegate.swift */,
 				4820D08224D4255E00DA45D6 /* SceneDelegate.swift */,
@@ -76,6 +82,22 @@
 				4820D09524D425C300DA45D6 /* APIManager.swift */,
 			);
 			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		4820D09724D42C2F00DA45D6 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				4820D09824D42C4D00DA45D6 /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		4820D09A24D42D2500DA45D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4820D09B24D42D6D00DA45D6 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +173,8 @@
 			files = (
 				4820D09624D425C300DA45D6 /* APIManager.swift in Sources */,
 				4820D08524D4255E00DA45D6 /* ViewController.swift in Sources */,
+				4820D09924D42C4D00DA45D6 /* Parser.swift in Sources */,
+				4820D09C24D42D6D00DA45D6 /* Model.swift in Sources */,
 				4820D08124D4255E00DA45D6 /* AppDelegate.swift in Sources */,
 				4820D08324D4255E00DA45D6 /* SceneDelegate.swift in Sources */,
 			);
