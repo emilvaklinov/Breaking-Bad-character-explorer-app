@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - CharacterElement
-struct CharacterElement {
+struct Character {
     let charID: Int
     let name, birthday: String
     let occupation: [String]
