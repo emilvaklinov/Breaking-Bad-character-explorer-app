@@ -20,7 +20,18 @@
 		4820D0A524D4551E00DA45D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820D0A424D4551E00DA45D6 /* DetailViewController.swift */; };
 		4820D0A824D5D07400DA45D6 /* MasterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820D0A724D5D07400DA45D6 /* MasterViewCell.swift */; };
 		4820D0AA24D5E15500DA45D6 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4820D0A924D5E15500DA45D6 /* DetailViewCell.swift */; };
+		48A6BD3024E0585000532E2C /* Breaking_Bad_character_explorer_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A6BD2F24E0585000532E2C /* Breaking_Bad_character_explorer_appTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48A6BD3224E0585000532E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4820D07524D4255D00DA45D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4820D07C24D4255D00DA45D6;
+			remoteInfo = "Breaking Bad character explorer app";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4820D07D24D4255D00DA45D6 /* Breaking Bad character explorer app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breaking Bad character explorer app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +49,20 @@
 		4820D0A424D4551E00DA45D6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4820D0A724D5D07400DA45D6 /* MasterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewCell.swift; sourceTree = "<group>"; };
 		4820D0A924D5E15500DA45D6 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		48A6BD2D24E0585000532E2C /* Breaking Bad character explorer appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breaking Bad character explorer appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A6BD2F24E0585000532E2C /* Breaking_Bad_character_explorer_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_character_explorer_appTests.swift; sourceTree = "<group>"; };
+		48A6BD3124E0585000532E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4820D07A24D4255D00DA45D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A6BD2A24E0585000532E2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				4820D07F24D4255D00DA45D6 /* Breaking Bad character explorer app */,
+				48A6BD2E24E0585000532E2C /* Breaking Bad character explorer appTests */,
 				4820D07E24D4255D00DA45D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				4820D07D24D4255D00DA45D6 /* Breaking Bad character explorer app.app */,
+				48A6BD2D24E0585000532E2C /* Breaking Bad character explorer appTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +167,15 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		48A6BD2E24E0585000532E2C /* Breaking Bad character explorer appTests */ = {
+			isa = PBXGroup;
+			children = (
+				48A6BD2F24E0585000532E2C /* Breaking_Bad_character_explorer_appTests.swift */,
+				48A6BD3124E0585000532E2C /* Info.plist */,
+			);
+			path = "Breaking Bad character explorer appTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +196,24 @@
 			productReference = 4820D07D24D4255D00DA45D6 /* Breaking Bad character explorer app.app */;
 			productType = "com.apple.product-type.application";
 		};
+		48A6BD2C24E0585000532E2C /* Breaking Bad character explorer appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A6BD3624E0585000532E2C /* Build configuration list for PBXNativeTarget "Breaking Bad character explorer appTests" */;
+			buildPhases = (
+				48A6BD2924E0585000532E2C /* Sources */,
+				48A6BD2A24E0585000532E2C /* Frameworks */,
+				48A6BD2B24E0585000532E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48A6BD3324E0585000532E2C /* PBXTargetDependency */,
+			);
+			name = "Breaking Bad character explorer appTests";
+			productName = "Breaking Bad character explorer appTests";
+			productReference = 48A6BD2D24E0585000532E2C /* Breaking Bad character explorer appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +226,10 @@
 				TargetAttributes = {
 					4820D07C24D4255D00DA45D6 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					48A6BD2C24E0585000532E2C = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 4820D07C24D4255D00DA45D6;
 					};
 				};
 			};
@@ -193,6 +247,7 @@
 			projectRoot = "";
 			targets = (
 				4820D07C24D4255D00DA45D6 /* Breaking Bad character explorer app */,
+				48A6BD2C24E0585000532E2C /* Breaking Bad character explorer appTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +260,13 @@
 				4820D08D24D4256200DA45D6 /* LaunchScreen.storyboard in Resources */,
 				4820D08A24D4256200DA45D6 /* Assets.xcassets in Resources */,
 				4820D08824D4255E00DA45D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A6BD2B24E0585000532E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +290,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48A6BD2924E0585000532E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A6BD3024E0585000532E2C /* Breaking_Bad_character_explorer_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48A6BD3324E0585000532E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4820D07C24D4255D00DA45D6 /* Breaking Bad character explorer app */;
+			targetProxy = 48A6BD3224E0585000532E2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4820D08624D4255E00DA45D6 /* Main.storyboard */ = {
@@ -398,6 +476,44 @@
 			};
 			name = Release;
 		};
+		48A6BD3424E0585000532E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Breaking Bad character explorer appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emil.Breaking-Bad-character-explorer-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breaking Bad character explorer app.app/Breaking Bad character explorer app";
+			};
+			name = Debug;
+		};
+		48A6BD3524E0585000532E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Breaking Bad character explorer appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.emil.Breaking-Bad-character-explorer-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breaking Bad character explorer app.app/Breaking Bad character explorer app";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +531,15 @@
 			buildConfigurations = (
 				4820D09224D4256200DA45D6 /* Debug */,
 				4820D09324D4256200DA45D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48A6BD3624E0585000532E2C /* Build configuration list for PBXNativeTarget "Breaking Bad character explorer appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A6BD3424E0585000532E2C /* Debug */,
+				48A6BD3524E0585000532E2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
