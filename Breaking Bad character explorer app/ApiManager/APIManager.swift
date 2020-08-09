@@ -9,57 +9,35 @@
 import Foundation
 import UIKit
 
-enum Outcome {
-    case success(Data)
-    case failure(String)
+enum CharacterError: Error {
+    case noDataAvailable
+    case canNotProcessData
 }
 
 struct APIManager {
-    let imageCache: NSCache<NSString, UIImage>
-    private let session: URLSession
     
-    init(session: URLSession = URLSession(configuration: .default)) {
-        self.session = session
-        imageCache = NSCache<NSString, UIImage>()
+    let resourceURL: URL
+    
+    init(characterName: String) {
+        let resourceString = "https://breakingbadapi.com/api/characters?name=\(characterName)"
+        guard let resourceURL = URL(string: resourceString) else {fatalError()}
+        self.resourceURL = resourceURL
     }
     
-    func searchFor(_ term: String, completion: @escaping (Outcome) -> Void) {
-        
-//        https://breakingbadapi.com/api/characters
-        
-        var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
-        urlComponents.host = "breakingbadapi.com"
-        urlComponents.path = "/api/characters"
-
-        guard let searchURL = urlComponents.url else {
-            completion(.failure("Unable to make URL"))
-            return
-        }
-        
-        let dataTask = session.dataTask(with: searchURL) { (data, response, error) in
-            
-            if let error = error {
-                completion(.failure(error.localizedDescription))
-                print(error)
-            } else if let data = data, let response = response as? HTTPURLResponse {
-                
-                switch response.statusCode {
-                    
-                case 200...299:
-                    completion(.success(data))
-                    print(data)
-                default:
-                    completion(.failure("Response not in range 200-299"))
-                    
-                }
-                
+    func getCharacters(completion: @escaping(Result<[Character], CharacterError>)-> Void) {
+        let dataTask = URLSession.shared.dataTask(with: resourceURL) { data, _, _ in
+            guard let jsonData = data else {
+                completion(.failure(.noDataAvailable))
+                return
             }
-            
+            do {
+                let decoder = JSONDecoder()
+                let charactersResponse = try decoder.decode(Character.self, from: jsonData)
+                completion(.success([charactersResponse]))
+            }catch{
+                completion(.failure(.canNotProcessData))
+            }
         }
-        
         dataTask.resume()
-        
     }
-    
 }

@@ -33,18 +33,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-d9-b5V">
-                                                    <rect key="frame" x="116" y="25" width="209" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceid" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-43-aw1">
                                                     <rect key="frame" x="15" y="7" width="63" height="55.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="PYn-43-aw1" secondAttribute="height" multiplier="1:1" constant="5" id="zug-mo-2tK"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-d9-b5V">
+                                                    <rect key="frame" x="116" y="25" width="209" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="PYn-43-aw1" firstAttribute="top" secondItem="70l-4C-Oo2" secondAttribute="topMargin" constant="-5" id="Sf8-B9-YNT"/>
@@ -57,7 +57,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageCharacter" destination="70l-4C-Oo2" id="PM7-UY-Ina"/>
+                                            <outlet property="imageCharacter" destination="PYn-43-aw1" id="3pw-Ia-HhL"/>
                                             <outlet property="nameLabel" destination="4FT-d9-b5V" id="ugO-gJ-pZN"/>
                                         </connections>
                                     </tableViewCell>

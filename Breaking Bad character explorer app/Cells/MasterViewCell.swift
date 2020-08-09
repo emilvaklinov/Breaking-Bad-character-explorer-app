@@ -10,7 +10,8 @@ import UIKit
 
 class MasterViewCell: UITableViewCell {
 
-    @IBOutlet weak var imageCharacter: UIView!
+    @IBOutlet weak var imageCharacter: UIImageView!
+    
     @IBOutlet weak var nameLabel: UILabel!
     
     override func awakeFromNib() {
